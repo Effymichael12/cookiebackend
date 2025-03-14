@@ -7,7 +7,7 @@ const cors = require('cors');
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin:'http://localhost:3000', credentials: true}))
+app.use(cors({origin:'https://cookiefrontend.vercel.app', credentials: true}))
 
 app.post('/login', async (req, res) => {
   const emailBack = '123@gmail.com';
